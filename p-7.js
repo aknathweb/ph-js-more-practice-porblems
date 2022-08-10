@@ -11,7 +11,7 @@
 // if-else.
 
 function grade(mark) {
-    const grade = mark > 79 ? "A" : mark > 59 ? "B" : mark > 49 ? "C" : mark > 39 ? "D" : "A";
+    const grade = mark > 79 ? "A" : mark > 59 ? "B" : mark > 49 ? "C" : mark > 39 ? "D" : "F";
     return grade;
 }
 const me = 85, tom = 66, jane = 95, peter = 56, john = 40;
