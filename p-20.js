@@ -5,3 +5,5 @@ for (let number = 412; number <= 456; number++) {
     if (number % 2 == 0)
         console.log("Even number: ", number);
 }
+let number = 90;
+console.log(Array.isArray(number));
