@@ -1,0 +1,26 @@
+// 30) You are in a hurry to go to your school on time. But when you are crossing
+// the road, the traffic signal is red coloured. In this situation, if you try to cross the
+// road, you may be in danger.If you notice a yellow coloured traffic signal, you
+// should stop. If you notice a green coloured traffic signal, you should cross the
+// road. So write a JS code, where there is a variable called signal. Its value can
+// be green, yellow or red & we will get different activities as output depending on
+// the variable. So, hurry up.
+
+function traffic_signal(signal) {
+    let situation;
+    switch (signal) {
+        case 'red':
+            situation = 'danger';
+            break;
+        case 'yellow':
+            situation = 'stop';
+            break;
+        case 'green':
+            situation = 'cross road';
+            break;
+        default:
+            situation = 'give correct input';
+    }
+    return situation;
+}
+console.log(traffic_signal('red'));
