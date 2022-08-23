@@ -12,3 +12,19 @@ console.log(smallest_element(numbers));
 
 // another way 
 console.log(Math.min(...numbers));
+
+// Now for the previous array, try to find the second largest element.
+function secondLargest(numbers) {
+    let secondLargest = largest = numbers[0];
+    for (let number of numbers) {
+        if (number > largest) {
+            secondLargest = largest
+            largest = number;
+        }
+        else if (number > secondLargest) {
+            secondLargest = number;
+        }
+    }
+    return secondLargest;
+}
+console.log("Second largest number : ", secondLargest(numbers));
