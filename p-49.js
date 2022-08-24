@@ -10,3 +10,8 @@ function average(numbers) {
     return sum / numbers.length;
 }
 console.log(average(numbers));
+
+// another way 
+let sum = 0;
+numbers.forEach(n => sum += n);
+console.log(sum / numbers.length);
